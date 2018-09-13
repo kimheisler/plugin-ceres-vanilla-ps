@@ -1,8 +1,8 @@
 <script type="x/template" id="vue-item-image-carousel">
     <div itemscope itemtype="http://schema.org/Thing">
-        <div id="single-carouselx" class="" ref="single">
+        <div id="single-image" class="" ref="single">
             <div v-for="image in singleImages">                
-                    <img class="img-responsive" :src="image.url" :alt="getAltText(image)" :title="getItemName()" itemprop="image">                
+                    <img class="img-fluid" :src="image.url" :alt="getAltText(image)" :title="getItemName()" itemprop="image">                
             </div>
         </div>        
     </div>
