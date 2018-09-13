@@ -4,10 +4,14 @@
             <div class="row">
                 {{ LayoutContainer.show("Ceres::Header.LeftSide") }}
 
+                <div class="tel-info hidden-md-down">Druckerpatronen, Toner und Bürobedarf zu Discountpreisen</div>
+                
                 <ul id="controlsList" class="controls-list list-inline">
 
                     <li class="list-inline-item control-user">
-                        <user-login-handler>
+                        <a href="tel:+49-4671-943349300"><i aria-hidden="true" class="fa fa-phone"></i> <span class="hidden-xs-down">04671 - 943 349 300</span></a>
+                        <span class="pipe"></span>
+                        <user-login-handler>                            
                             <a data-toggle="modal">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 <span class="hidden-xs-down">{{ trans("Ceres::Template.login") }}</span>
