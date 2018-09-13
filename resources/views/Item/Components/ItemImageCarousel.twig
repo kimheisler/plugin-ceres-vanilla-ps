@@ -2,7 +2,7 @@
     <div itemscope itemtype="http://schema.org/Thing">
         <div id="single-carouselx" class="" ref="single">
             <div v-for="image in singleImages">                
-                    <img class="owl-lazy" :data-src="image.url" :alt="getAltText(image)" :title="getItemName()" itemprop="image">                
+                    <img class="img-responsive" :src="image.url" :alt="getAltText(image)" :title="getItemName()" itemprop="image">                
             </div>
         </div>        
     </div>
