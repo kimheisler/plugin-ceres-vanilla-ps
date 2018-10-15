@@ -11,7 +11,7 @@
                                      :forward-to-single-item="{{ forwardToSingleItem | json_encode }}">
                             <div class="search-box-inner">
                                 <div class="search-box-shadow-frame">
-                                    <input type="search" class="search-input"/>
+                                    <input type="search" class="search-input" placeholder="Produktsuche" />
                                     <button class="search-submit" type="submit">
                                         <i class="fa fa-search sm-up"></i>
                                     </button>
@@ -58,17 +58,7 @@
                             </a>
                         </li>
                     {% endif %}
-                    <li class="list-inline-item control-search">
-                        <a class="anicon anicon-search-xcross"
-                           aria-label="toggle search"
-                           data-toggle="collapse"
-                           href="#searchBox"
-                           aria-expanded="{% if services.template.isSearch() %}true{% else %}false{% endif %}"
-                           aria-controls="searchBox"
-                           data-parent="#controlsList">
-                            <span class="anicon-search-item" aria-hidden="true"></span>
-                        </a>
-                    </li>
+                    
                     {% if "wish-list" in enabledRoutes or "all" in enabledRoutes %}
                         <li class="list-inline-item control-wish-list">
                             <wish-list-count>
@@ -120,10 +110,7 @@
 
 <div class="container-max page-header">
     <div class="row">
-        <div id="searchBox" class="cmp cmp-search-box collapse {% if services.template.isSearch() %} in {% endif %}">
-            <item-search template="#vue-item-search"></item-search>
-        </div>
-
+        
         {% if enableCurrencySelect == "true" %}
             <div id="currencySelect" class="cmp cmp-currency-select collapse">
                 <div class="container-max">
